@@ -1,0 +1,251 @@
+/*Статья про обнуление https://medium.com/@stasonmars/%D1%81%D0%BE%D0%B2%D1%80%D0%B5%D0%BC%D0%B5%D0%BD%D0%BD%D1%8B%D0%B8%CC%86-%D1%81%D0%B1%D1%80%D0%BE%D1%81-css-f5816963c82b*/
+/*Обнуление*/
+
+/*Делить страницу на блоки - создаю контейнеры и либо указываю высоту контентом, либо vh (на всю страницу), и крайне редко px*/
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;} /*Всё в блоки, для лучшей вёрстки*/
+body{
+	display: flex;
+	flex-direction: column;
+}
+
+html,body{ /*Привожу все шрифты к одному стилю*/
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	
+	font-family: Lato;
+
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;} /*Наследую настройки шрифтов для данных элементов, потому что это не происходит автоматически*/
+
+input::-ms-clear{display: none;} /*Убираю кастомы разных браузеров по умолчанию*/
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+a{text-decoration: none;}
+ul li{list-style: none;}
+li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;} /*Всё заголовки "в ноль", для перестройки под макет"
+/*--------------------*/
+
+
+
+body{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 15px;
+	columns: #333333;
+}
+
+.container{
+	width: 100%; /*всегда на всю ширину экрана, кроме..*/
+	max-width: 1200px; /*когда он становится шире 1200. На этом край*/
+	margin: 0 auto; /*выравнил по центру*/
+}
+
+.text{
+	max-width: 720px;
+	margin-top: 50px;
+	color: #636363;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 24px;
+}
+
+
+/* header*/
+.header{
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+}
+
+.header__logo{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 30px;
+	font-weight: 700;
+	color: white;
+	margin-top: 30px;
+}
+
+.header__inner{
+	display: flex;
+	justify-content: space-between;
+	align-items : center;
+}
+/* кастомизация ссылок*/
+
+.header-navigation__item{
+	display: inline-block;
+	color: white;
+	text-transform: uppercase;
+	padding:15px 15px;
+	position: relative; /*ради того, что бы от него отсчитывать координаты полоски подчёркивания*/
+}
+.header-navigation__item:after{ /*создаю подчёркивающий элемент под ссылками, но пока отключаю*/
+	content: "";
+	display: block;
+	width: 100%;
+	height: 3px;
+	background-color: #fce38a;
+	position: absolute; /* без него строка будет прыгать*/
+	top: 100%; 
+	left: 0;
+	right: 0;
+	opacity: 0;/*видимость этого блока*/
+	transition: opacity .2s linear;
+}
+.header-navigation__item:hover{  /*меняю только цвет*/
+	
+	color: #fce38a;
+	transition: color .2s linear;
+}
+.header-navigation__item:hover:after{/*так же включаю видимость у блока с подчёркиванием*/
+	opacity: 1;
+}
+
+
+/* Intro */
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+
+.intro{	/*блок-раздел, занимающий всю ширину что адекватно расположить в себе контейнер. */
+	width: 100%;
+	height: 100vh;
+	background: url(img/BG-Intro.jpg) center no-repeat; /*движущийся фон*/ 
+	background-size: cover; /*фон всегда на фулл*/
+
+	/*inro у меня на всю видимую страницу. И уже в её пределах я могу раскладывать контент.*/
+	display: flex; 
+	flex-direction: column;
+	justify-content: center;
+	
+}
+/*дополнительный класс создан для того, что бы расположить слайдер на этой странице в самом её низу (адаптив для разных экранов)*/
+.intro-container{
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	justify-content: space-between;
+}
+/*внутренний контейнер для того, что бы обозначить зону заголовка*/
+.intro__inner{ 
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+	max-width: 900px;
+	margin: 0 auto;
+	
+}
+.intro__suptitle{
+	margin-top: 150px; /*включать только через медиа-запрос, когда экран слишком узкий*/
+	text-align: center;
+	color: #ffffff;
+	font-family: "Kaushan Script";
+	font-size: 72px;
+	font-weight: 400;
+}
+.intro__title{
+	font-size: 150px;
+	text-transform: uppercase;
+	font-weight: 700;
+	text-align: center;
+	line-height: 1;
+}
+/*линия после заголовка используется часто, по этому указана как отдельный блок*/
+.after-title-line{ 
+	display: block;
+	width: 60px;
+	height: 3px;
+	margin: 70px 0 50px 0;
+	background-color: white;
+}
+/*эту же линию могу сделать и через after, но она не однотипна по всему сайту и стилизовать её в последствии было бы сложнее
+.intro__title:after{
+	content:"";
+	display:block;
+	width:60px;
+	height:3px;
+	background-color:white;
+}
+*/
+.intro__button{
+	border: 3px solid white;
+	text-transform: uppercase;
+	font-weight: 700;
+	padding: 10px 25px;
+	font-size: 14px;
+	color: white;
+	transition: background .3s linear, color .3s linear ;
+}
+
+.intro__button:hover{
+	color:#333;
+	background-color: white;
+}
+
+/* intro-slider */
+.intro-slider{
+	display: flex;
+	justify-content: space-between;
+	color: white;
+	margin: 10px 0;
+	
+}
+
+.intro-slider__item{
+	width: 23%; /*ширина во флексах мне, в принципе, не нужна, но ради я делаю верхнюю границу у блока, а размер блока = контенту.*/
+	border-top: 3px solid #ffffff;
+	font-size: 18px;
+	text-transform: uppercase;
+	padding-top: 15px;
+	opacity: 0.5;
+	position: relative;
+}
+/*модификатор выбранного слайдера*/
+.intro-slider__item-active{
+	opacity: 1;
+}
+/*сомнительны преимущества использования псевдоулементов для создания блочных элементов (для работы с ними в будущем в js, но пока буду реализховывать их таким образом)*/
+.intro-slider__item-active:before{ 
+	display: block;
+	content: "";
+	width: 30px;
+	height: 3px;
+	background-color: red;
+	position: absolute;  /*не забывать включать абсолют, иначе не смогу выставить элемент*/
+	top:-3px;
+	
+}
+
+.intro-slider__item-number{
+	font-size: 24px;
+	font-weight: 700;
+}
+
+/* About */
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
