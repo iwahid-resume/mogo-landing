@@ -388,3 +388,23 @@ body{
 				margin:0 10px;
 				background-color: #e5e5e5;
 			}
+/* Design */
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+.design{
+	min-height: 850px;
+	width: 100%;
+	background: url(img/BG-design.png) no-repeat center;
+	position: relative;
+}
+
+	.devices__tablet{
+		position: absolute;
+		bottom: 0;
+		margin-left: 15%;
+	}
+	.devices__smartphone{
+		position: absolute;
+		bottom: -75px;
+		right: 0;
+		margin-right: 35%;
+	}
