@@ -299,7 +299,12 @@ body{
 		margin-bottom: 100px;
     }
         .about_photo {
-            margin-right: 30px;
+			margin: 10px 0px;
+			margin-right: 30px;
+			
+		}
+		.about_photo:last-child{
+			margin-right: 0;
 		}
 		
 	.achievement-counter{
@@ -341,4 +346,5 @@ body{
 				}
 				
 /* Services */
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 
