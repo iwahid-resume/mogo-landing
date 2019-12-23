@@ -12,6 +12,7 @@
 	<!--Подключаем шрифты-->
 	<link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Montserrat:400,700,900&display=swap" rel="stylesheet"> 
 	<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400&display=swap" rel="stylesheet">
 	<!-- Кодировка страницы -->
 	<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
 </head>
@@ -232,7 +233,7 @@
 		</div>
 	</div> <!--whatWeDO (end) -->
 
-	<div class="quote"> <!-- Блок НЕ уникальный, и на страницебудет использоваться ещё раз-->
+	<div class="quote"> <!-- Блок НЕ уникальный, и на странице будет использоваться ещё раз-->
 		<div class="quote__container container">
 			<img src="img/quote-icon.png" alt="quote-icon" class="quote__icon">
 			<div class="quote__text">
@@ -243,7 +244,59 @@
 		
 	</div><!--quote (end) -->
 
-	
+	<div class="team">
+		<div class="team__container container">
+
+			<div class="team__title-section title-section">
+				<div class="team__sup-title sup-title">Who we are</div>
+				<div class="team__title title">Meet our team</div>
+				<div class="line"></div>
+			</div>
+
+			<div class="description">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat accusantium voluptatem non neque repudiandae nihil quidem consectetur quasi in consequuntur nemo minus expedita similique amet eum, blanditiis deleniti voluptatibus eaque!
+			</div>
+
+			<div class="team__gallery">
+				<div class="team__gallery-item">
+					<img src="img/team__matthew.png" alt="Matthew" class="team__gallery-item_photo">
+					<div class="team__gallery-item_name">Matthew Dix</div>
+					<div class="team__gallery-item_role">Graphic Design</div>
+				</div>
+				<div class="team__gallery-item">
+					<img src="img/team__christopher.png" alt="Christopher" class="team__gallery-item_photo">
+					<div class="team__gallery-item_name">Matthew Dix</div>
+					<div class="team__gallery-item_role">Graphic Design</div>
+				</div>
+				<div class="team__gallery-item">
+					<img src="img/team__michael.png" alt="Michael" class="team__gallery-item_photo">
+					<div class="team__gallery-item_name">Matthew Dix</div>
+					<div class="team__gallery-item_role">Graphic Design</div>
+				</div>
+				
+			</div>
+			
+		</div>
+	</div>
+
+	<!-- Нужно было ещё больше независимости для блоков, но при этом максимально полно заполнить однотипные контейнеры.
+	В моём случае, каждый раз размечая область для контента я применяю блок container (что верно), и каждый раз я его дополняю чем-то (flex-directions: column/row) и практически каждый раз я добавляю одни и те же значения в миксе. Но в место этого, я мог бы в самом начале внести их в оригинальный контейнер.-->
+
+	<div class="work-samples"> <!-- Блок НЕ уникальный, и на странице будет использоваться ещё раз-->
+		<div class="work-samples__container container"> <!--макет не идеален, по этому пришлось вырезать иконки самому-->
+			
+			<img src="img/work-sample-item_1.png" alt="quote-icon" class="work-samples__item">
+			<img src="img/work-sample-item_2.png" alt="quote-icon" class="work-samples__item">
+			<img src="img/work-sample-item_3.png" alt="quote-icon" class="work-samples__item">
+			<img src="img/work-sample-item_4.png" alt="quote-icon" class="work-samples__item">
+			<img src="img/work-sample-item_5.png" alt="quote-icon" class="work-samples__item">
+			<img src="img/work-sample-item_6.png" alt="quote-icon" class="work-samples__item">
+
+			
+		</div>
+		
+	</div><!--quote (end) -->
+
 </body>
 
 </html> 
