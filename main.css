@@ -676,3 +676,77 @@ body{
 		flex-wrap: wrap;
 		padding: 25px 0;
 	}
+
+
+.some-work__container{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+	.temporary-block{
+		width: 100px;
+		height: 350px;
+		background-color: grey;
+
+	}
+	.some-work__quote-container{
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		margin: 100px 0 130px 0;
+	}
+
+.whatPeopleSay{
+	background: url(img/BG-WhatPeopleSay.png) center no-repeat;
+	background-size: cover;
+}	
+
+	.whatPeopleSay__quote-container{
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+		.quote-container-item{
+			display: flex;
+			flex-direction: row;
+			max-width: 48%;
+			min-width: 550px; /*подкорректировать под размеры мобилок*/
+			margin-bottom: 80px;
+			align-items: center;
+		}
+			.whatPeopleSay__text{
+				margin-left: 15px;
+				position: relative;
+			}
+
+				.whatPeopleSay__text_author{
+					color: #333333;
+					font-family: Montserrat;
+					font-size: 14px;
+					font-weight: 700;
+					text-transform: uppercase;
+					margin-bottom: 15px;
+				}
+				.whatPeopleSay__text_role{
+					color: #333333;
+					font-family: 'Roboto',  sans-serif;
+					font-size: 15px;
+					font-weight: 400;
+					line-height: 24px;
+					margin-bottom: 40px;
+				}
+				.whatPeopleSay__text_quote{
+					color: #999999;
+					font-family: Roboto;
+					font-size: 15px;
+					font-weight: 400;
+					line-height: 24px;
+				}
+				.whatPeopleSay__text_quote::before{
+					content: "";
+					width: 60px;
+					height: 3px;
+					background-color: #f38181;
+					position: absolute;
+					top: 70px;
+				}
