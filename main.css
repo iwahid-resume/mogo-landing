@@ -631,9 +631,10 @@ body{
 }
 	.team__gallery{
 		display: flex;
-		justify-content: space-between;
+		justify-content: space-evenly;
 		flex-wrap: wrap;
 		align-items: flex-start;
+		margin-bottom: 115px;
 	}
 		.team__gallery-item{
 			display: flex;
