@@ -282,7 +282,7 @@
 	<!-- Нужно было ещё больше независимости для блоков, но при этом максимально полно заполнить однотипные контейнеры.
 	В моём случае, каждый раз размечая область для контента я применяю блок container (что верно), и каждый раз я его дополняю чем-то (flex-directions: column/row) и практически каждый раз я добавляю одни и те же значения в миксе. Но в место этого, я мог бы в самом начале внести их в оригинальный контейнер.-->
 
-	<div class="work-samples">
+	<div class="work-samples"> <!-- Блок НЕ уникальный, и на странице будет использоваться ещё раз-->
 		<div class="work-samples__container container"> <!--макет не идеален, по этому пришлось вырезать иконки самому-->
 			
 			<img src="img/work-sample-item_1.png" alt="quote-icon" class="work-samples__item">
@@ -295,7 +295,7 @@
 			
 		</div>
 		
-	</div><!--quote (end) -->
+	</div><!--work-samples (end) -->
 
 	<div class="some-work">
 		<div class="some-work__container container">
@@ -318,7 +318,7 @@
 				<img src="img/some-work__author-image.png" alt="quote-icon" class="quote__icon">
 				<div class="quote__text">
 					<div class="quote__text-quote">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”</div>
-					<div class="quote__text-author">John Doe</div>
+					<div class="quote__text-author">Joshua Earle</div>
 				</div>
 			</div>
 			
@@ -347,9 +347,9 @@
 				</div>
 
 				<div class="quote-container-item">
-					<img src="img/whatPeopleSay__face_1.png" alt="John Doe" class="quote__icon">
+					<img src="img/whatPeopleSay__face_2.png" alt="John Doe" class="quote__icon">
 						<div class="whatPeopleSay__text">
-							<div class="whatPeopleSay__text_author">Matthew Dix</div>
+							<div class="whatPeopleSay__text_author">Nick Karvounis</div>
 							<div class="whatPeopleSay__text_role">Graphic Design</div>
 							
 							<div class="whatPeopleSay__text_quote">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.</div>
@@ -357,9 +357,9 @@
 				</div>
 				
 				<div class="quote-container-item">
-					<img src="img/whatPeopleSay__face_1.png" alt="John Doe" class="quote__icon">
+					<img src="img/whatPeopleSay__face_3.png" alt="John Doe" class="quote__icon">
 						<div class="whatPeopleSay__text">
-							<div class="whatPeopleSay__text_author">Matthew Dix</div>
+							<div class="whatPeopleSay__text_author">Jaelynn Castillo</div>
 							<div class="whatPeopleSay__text_role">Graphic Design</div>
 							
 							<div class="whatPeopleSay__text_quote">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.</div>
@@ -367,9 +367,9 @@
 				</div>
 
 				<div class="quote-container-item">
-					<img src="img/whatPeopleSay__face_1.png" alt="John Doe" class="quote__icon">
+					<img src="img/whatPeopleSay__face_4.png" alt="John Doe" class="quote__icon">
 						<div class="whatPeopleSay__text">
-							<div class="whatPeopleSay__text_author">Matthew Dix</div>
+							<div class="whatPeopleSay__text_author">Mike Petrucci</div>
 							<div class="whatPeopleSay__text_role">Graphic Design</div>
 							
 							<div class="whatPeopleSay__text_quote">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.</div>

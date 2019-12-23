@@ -664,19 +664,24 @@ body{
 			margin-right: 0;
 		}
 
+/* Work-samples */
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
 .work-samples{
 	background-color: #f8f8f8;
 }
 
-.work-samples__container{
-		display: flex;
-		flex-direction: row;
-		justify-content: space-evenly;
-		align-items: center;
-		flex-wrap: wrap;
-		padding: 25px 0;
-	}
+	.work-samples__container{
+			display: flex;
+			flex-direction: row;
+			justify-content: space-evenly;
+			align-items: center;
+			flex-wrap: wrap;
+			padding: 25px 0;
+		}
 
+/* some-work */
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 
 .some-work__container{
 	display: flex;
@@ -696,6 +701,9 @@ body{
 		margin: 100px 0 130px 0;
 	}
 
+/* What-people-say */
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
 .whatPeopleSay{
 	background: url(img/BG-WhatPeopleSay.png) center no-repeat;
 	background-size: cover;
@@ -705,6 +713,7 @@ body{
 		display: flex;
 		flex-direction: row;
 		flex-wrap: wrap;
+		margin-top: 40px;
 	}
 		.quote-container-item{
 			display: flex;
@@ -750,3 +759,5 @@ body{
 					position: absolute;
 					top: 70px;
 				}
+/*  */
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
