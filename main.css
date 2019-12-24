@@ -771,17 +771,20 @@ body{
 	.blog-row{
 		display: flex;
 		flex-direction: row;
-		
 		flex-wrap: wrap;
+		justify-content: space-evenly;
 	}
 		.blog-row__post{
 			display: flex;
 			flex-direction: column;
 			align-items: flex-start;
-			max-width: 31%;
+			/*width: 80%; медиазапрос при адаптиве*/
+			max-width: 370px;
 			margin: 0 15px;
-			flex-shrink: 1;
 		}
+			.post__img{
+				width: 100%;
+			}
 			.post__title{
 				
 				color: #333333;
