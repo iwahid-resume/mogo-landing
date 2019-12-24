@@ -781,6 +781,7 @@ body{
 			/*width: 80%; медиазапрос при адаптиве*/
 			max-width: 370px;
 			margin: 0 15px;
+			position: relative;
 		}
 			.post__img{
 				width: 100%;
@@ -811,4 +812,44 @@ body{
 				margin-bottom: 10px;
 				margin-left: 0;
 			}
-			
+
+			.post__date-frame{
+				position: absolute;
+				width: 60px;
+				height: 70px;
+				background-color:#95e1d3;
+				top:150px;
+				left: -10px;
+				text-align: center;
+				padding-top: 15px;
+
+			}
+				.frame__number{
+
+					color: #ffffff;
+					font-family: "Roboto - Light" Italic;
+					font-size: 30px;
+					font-weight: 700;
+					text-transform: uppercase;
+
+				}
+				.frame__month{
+					color: #ffffff;
+					font-family: "Roboto - Light" Italic;
+					font-size: 15px;
+					font-weight: 400;
+				}
+			.post__views-counter{
+				margin-left: 30px;
+				display: inline-block;
+			}
+				.post__views-counter::before{
+					position: absolute;
+					left: 0px;
+					content:url(img/VIEW.png);
+					background-size: auto;
+				}
+			.post__commentary-counter{
+				margin-left: 30px;
+				display: inline-block;
+			}
