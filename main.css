@@ -780,7 +780,7 @@ body{
 			align-items: flex-start;
 			/*width: 80%; медиазапрос при адаптиве*/
 			max-width: 370px;
-			margin: 0 15px;
+			margin: 0 15px 115px 15px;
 			position: relative;
 		}
 			.post__img{
@@ -839,17 +839,23 @@ body{
 					font-size: 15px;
 					font-weight: 400;
 				}
-			.post__views-counter{
+			.post__counters-view{
 				margin-left: 30px;
 				display: inline-block;
 			}
-				.post__views-counter::before{
+				.post__counters-view::before{
 					position: absolute;
 					left: 0px;
 					content:url(img/VIEW.png);
 					background-size: auto;
 				}
-			.post__commentary-counter{
-				margin-left: 30px;
+			.post__counters-commentary{
+				margin-left: 40px;
 				display: inline-block;
-			}
+			}	
+				.post__counters-commentary::before{
+					position: absolute;
+					left: 80px;
+					content:url(img/SPEECH_BUBBLE_2.png);
+					background-size: auto;
+				}
