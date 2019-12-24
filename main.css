@@ -859,3 +859,46 @@ body{
 					content:url(img/SPEECH_BUBBLE_2.png);
 					background-size: auto;
 				}
+
+/* Footer */
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+.footer__container{
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+}
+	.footer-resume{
+		 /* в виду частой необходимости однотипного указания разметки, думаю в следующем проекте применить принцип как в бутстрапе: стилизовать блок набором готовых классов: "f-d--column; a-i--f-s"*/
+		 flex-direction: column;
+		 align-items: flex-start;
+		 margin: 15px 15px;
+	}
+		.footer__logo{
+			
+			color: #cccccc;
+			font-family: Montserrat;
+			font-size: 46px;
+			font-weight: 700;
+		}
+	.footer-blogs{
+		
+		margin: 15px 15px;
+		flex-direction: column;
+		align-items: flex-start;
+   	}
+   	.footer-instagram{
+		
+		margin: 15px 15px;
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	/*
+
+	width: 100%; /* можно было указать один класс для каждой похожей линии, но обратил на это внимание уже в самом конце работы. 
+				height: 1px;
+				background-color: #e5e5e5;
+				margin-bottom: 10px;
+				margin-left: 0; 
+				*/
