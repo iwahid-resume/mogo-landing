@@ -918,7 +918,7 @@ body{
 				display: inline-block;
 			}
 		.footer__line{
-			margin: 20px 0 15px 0можно было указать один класс для каждой похожей линии, но обратил на это внимание уже в самом конце работы. 
+			margin: 20px 0 15px 0;/*можно было указать один класс для каждой похожей линии, но обратил на это внимание уже в самом конце работы. */
 		}
 
 		.footer__follow-us{
@@ -944,21 +944,56 @@ body{
 
 
 
-
+	/* Footer-blogs */
+	/*/////////////////////////////////////////////////*/
 	.footer-blogs{
-		
+		display: flex;
 		margin: 15px 15px;
 		flex-direction: column;
 		align-items: flex-start;
-   	}
+	   }
+	   .title-in-footer{
+		   	color: #333333;
+			font-family: Montserrat;
+			font-size: 14px;
+			font-weight: 700;
+			text-transform: uppercase;
+			margin-bottom: 40px;
+	   }
+	   .footers-blogs__item{
+			display: flex;
+			flex-direction: row;
+			margin-bottom: 30px ;
+	   	}
+	   		.blogs__item-text{
+				display: flex;
+				flex-direction: column;
+				margin-left: 15px;
+			}
+				.blogs__item-title{
+					color: #333333;
+					font-family: Montserrat;
+					font-size: 12px;
+					font-weight: 700;
+					line-height: 18px;
+					text-transform: uppercase;
+				}
+				.blogs__item-dateOfPublish{
+					color: #999999;
+					font-family: Roboto;
+					font-style: italic;
+					font-size: 13px;
+					font-weight: 400;
+					line-height: 24px;
+				}
+
+		/* Footer-instagram */
+	/*/////////////////////////////////////////////////*/
    	.footer-instagram{
 		
-		margin: 15px 15px;
 		flex-direction: column;
 		align-items: flex-start;
 	}
 
 
 	
-	/* Footer-blogs */
-	/*/////////////////////////////////////////////////*/
