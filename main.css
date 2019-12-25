@@ -874,7 +874,6 @@ body{
 }	
 
 	.item-of-footer{
-		max-width: 31%;
 		margin: 15px 20px;
 	}
 	/* Footer-resume */
@@ -884,6 +883,7 @@ body{
 		 /* в виду частой необходимости однотипного указания разметки, думаю в следующем проекте применить принцип как в бутстрапе: стилизовать блок набором готовых классов: "f-d--column; a-i--f-s"*/
 		 flex-direction: column;
 		 align-items: flex-start;
+		 width: 44%;
 	}
 	
 		.footer__logo{
@@ -923,6 +923,7 @@ body{
 		.footer__follow-us{
 			display: flex;
 			align-items: center;
+			margin-bottom: 40px;
 		}
 			.footer__follow-us-label{
 				color: #999999;
@@ -932,6 +933,9 @@ body{
 				font-weight: 400;
 				line-height: 24px;
 				display: inline-block;
+				margin-right: 10px;
+			}
+			.footer-follow__link{
 				margin-right: 10px;
 			}
 		
@@ -949,6 +953,7 @@ body{
 		display: flex;
 		flex-direction: column;
 		align-items: flex-start;
+		width: 28%;
 		
 	   }
 	   .title-in-footer{
@@ -996,6 +1001,7 @@ body{
 		display: flex;
 		flex-direction: column;
 		align-items: flex-start;
+		width: 28%;
 	}
 		.footer-instagram__imgs{
 			display: flex;
