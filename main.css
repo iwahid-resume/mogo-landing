@@ -866,12 +866,17 @@ body{
 .footer{
 	
 	background-color: #f8f8f8;
+	position: relative;
 }
 .footer__container{
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
 	align-items: flex-start;
 }	
+	.footer__row-content{
+		display: flex;
+		flex-direction: row;
+	}
 
 	.item-of-footer{
 		margin: 15px 20px;
@@ -1014,6 +1019,29 @@ body{
 				
 			}
 
-
-
-	
+.after__row-content_line{
+	width: 100%;
+	margin-bottom: 100px;
+	margin: 70px 5px 24px;
+}
+	.footer__copyright-block{
+		align-self: center;
+		 margin-bottom: 22px;
+	}
+		.footer__copyright-text{
+			display: inline;
+				
+			color: #333333;
+			font-family: Montserrat;
+			font-size: 14px;
+			font-weight: 700;
+		}
+		.footer__copyright-author-name{
+			display: inline;
+				
+			color: #333333;
+			font-family: Montserrat;
+			font-size: 14px;
+			font-weight: 400;
+			color: #f38181;
+		}
