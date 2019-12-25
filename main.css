@@ -874,7 +874,7 @@ body{
 }	
 
 	.item-of-footer{
-		max-width: 32%;
+		max-width: 31%;
 		margin: 0 10px;
 	}
 	/* Footer-resume */
@@ -963,6 +963,7 @@ body{
 	   .footers-blogs__item{
 			display: flex;
 			flex-direction: row;
+			align-items: flex-start;
 			margin-bottom: 30px ;
 	   	}
 	   		.blogs__item-text{
@@ -990,10 +991,16 @@ body{
 		/* Footer-instagram */
 	/*/////////////////////////////////////////////////*/
    	.footer-instagram{
-		
+		display: flex;
+		margin: 15px 15px;
 		flex-direction: column;
 		align-items: flex-start;
 	}
+		.footer-instagram__photo-item{
+			margin: 5px;
+			
+		}
+
 
 
 	
