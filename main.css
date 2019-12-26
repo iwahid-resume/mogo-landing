@@ -947,6 +947,7 @@ body{
 		.footer__subscribe-block{
 			width: 200px;
 			height: 100px;
+			padding: 30px;
 			background-color: grey;
 		}
 
