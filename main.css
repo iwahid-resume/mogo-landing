@@ -50,6 +50,18 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;} /*Всё заголовк
 /*--------------------*/
 
 
+/* === Variables === */
+
+:root{
+--screen-sm: 576px;
+--screen-md: 768px;
+--screen-lg: 992px;
+--screen-xl: 1200px;
+}
+
+
+/* === Variables (end) === */
+
 
 body{
 	font-family: 'Montserrat', sans-serif;
@@ -59,9 +71,11 @@ body{
 
 .container{
 	width: 100%; /*всегда на всю ширину экрана, кроме..*/
-	max-width: 1200px; /*когда он становится шире 1200. На этом край*/
+	max-width: 1210px; /*когда он становится шире 1200. На этом край*/
 	margin: 0 auto; /*выравнил по центру*/
+	/*padding: 0 5px; нужно было включать их изначально, но теперь уже поздно. И нужно будет включить их при уменьшении*/
 }
+
 
 .text{
 	max-width: 720px;
