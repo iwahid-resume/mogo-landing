@@ -75,6 +75,11 @@ body{
 	margin: 0 auto; /*выравнил по центру*/
 	/*padding: 0 5px; нужно было включать их изначально, но теперь уже поздно. И нужно будет включить их при уменьшении*/
 }
+	@media (max-width: 860px) {
+		.container{
+			max-width: 850px;
+		}
+	}
 
 
 .text{
@@ -103,6 +108,7 @@ body{
 	font-weight: 700;
 	color: white;
 	margin-top: 30px;
+	margin-left: 25px;
 }
 
 .header__inner{
@@ -189,7 +195,15 @@ body{
 	font-weight: 700;
 	text-align: center;
 	line-height: 1;
+	
 }
+	@media (max-width: 860px) {
+		.intro__title{
+			font-size: 100px;
+		}
+	}
+
+
 /*линия после заголовка используется часто, по этому указана как отдельный блок*/
 .after-title-line{ 
 	display: block;
@@ -227,7 +241,7 @@ body{
 	display: flex;
 	justify-content: space-between;
 	color: white;
-	margin: 10px 0;
+	margin: 10px 25px;
 	
 }
 
@@ -311,14 +325,23 @@ body{
 		flex-direction: row;
 		flex-wrap: wrap;
 		margin-bottom: 100px;
+		justify-content: space-evenly;
     }
         .about_photo {
-			margin: 10px 0px;
-			margin-right: 30px;
+			margin: 10px 5px;
 			
 		}
-		.about_photo:last-child{
-			margin-right: 0;
+		
+		@media (max-width: 860px) {
+			.about_photo {
+				margin: 10px 10px;
+				width: 195%;
+				
+			}
+			.about_photo:last-child{
+				margin-right: 10;
+			}
+			
 		}
 
 
