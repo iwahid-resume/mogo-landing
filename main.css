@@ -109,6 +109,7 @@ body{
 	color: white;
 	margin-top: 30px;
 	margin-left: 25px;
+	margin-right: 15px;
 }
 
 .header__inner{
@@ -118,6 +119,7 @@ body{
 }
 /* кастомизация ссылок*/
 
+
 .header-navigation__item{
 	display: inline-block;
 	color: white;
@@ -125,6 +127,13 @@ body{
 	padding:15px 15px;
 	position: relative; /*ради того, что бы от него отсчитывать координаты полоски подчёркивания*/
 }
+
+@media (max-width: 768px) {
+	.header-navigation__item{
+		padding:5px 5px;
+	}
+}
+
 .header-navigation__item:after{ /*создаю подчёркивающий элемент под ссылками, но пока отключаю*/
 	content: "";
 	display: block;
@@ -197,23 +206,24 @@ body{
 	line-height: 1;
 	
 }
-	/* @media (max-width: 860px) {
-		.intro__title{
-			font-size: 100px;
-		}
-	}
+	
 	@media (max-width: 600px) {
-					
-		.intro__title{
-			font-size: 68px;
-		}
+		.intro__suptitle{
+			margin-top: 100px;
+			font-size: 3em;
+		}			
+		
 	}
 	@media (max-width: 360px) {
-					
+		.intro__suptitle{
+			margin-top: 120px;
+			font-size: 2em;
+		}	
 		.intro__title{
-			font-size: 3em;
-		}
-	} */
+			font-size: 2.5em;			
+		}			
+		
+	} 
 
 /*линия после заголовка используется часто, по этому указана как отдельный блок*/
 .after-title-line{ 
@@ -223,6 +233,19 @@ body{
 	margin: 70px 0 50px 0;
 	background-color: white;
 }
+	@media (max-width: 600px) {
+		.after-title-line{ 
+			margin: 35px 0 30px 0;
+			background-color: white;
+		}			
+		
+	}
+	@media (max-width: 360px) {
+		.after-title-line{ 
+			margin: 35px 0 20px 0;
+			background-color: white;
+		}	
+	} 
 /*эту же линию могу сделать и через after, но она не однотипна по всему сайту и стилизовать её в последствии было бы сложнее
 .intro__title:after{
 	content:"";
@@ -1069,7 +1092,7 @@ body{
 				}
 				
 				
-			
+
 
 /* Footer */
 /*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
@@ -1255,9 +1278,9 @@ body{
 			}
 
 .after__row-content_line{
-	width: 100%;
+	width: 95%;
 	margin-bottom: 100px;
-	margin: 70px 5px 24px;
+	margin: 70px auto 24px;
 }
 	.footer__copyright-block{
 		align-self: center;
