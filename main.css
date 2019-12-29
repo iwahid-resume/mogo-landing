@@ -282,12 +282,17 @@ body{
 .intro-slider__item{
 	width: 23%; /*ширина во флексах мне, в принципе, не нужна, но ради я делаю верхнюю границу у блока, а размер блока = контенту.*/
 	border-top: 3px solid #ffffff;
-	font-size: 18px;
+	font-size: 3vw;
 	text-transform: uppercase;
 	padding-top: 15px;
 	opacity: 0.5;
 	position: relative;
 }
+@media (max-width: 768px) {
+	.intro-slider__item{
+		font-size: 2.5vw;
+	}
+} 
 /*модификатор выбранного слайдера*/
 .intro-slider__item-active{
 	opacity: 1;
