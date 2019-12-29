@@ -119,7 +119,9 @@ body{
 }
 /* кастомизация ссылок*/
 
-
+.header-navigation{
+	margin-right: 10px;
+}
 .header-navigation__item{
 	display: inline-block;
 	color: white;

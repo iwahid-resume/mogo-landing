@@ -31,25 +31,25 @@
 			<div class="header__inner">
 				<div class="header__logo">MoGo</div>
 				<nav class="header-navigation">
-					<a href="#" class="header-navigation__item">about</a>
-					<a href="#" class="header-navigation__item">service</a>
-					<a href="#" class="header-navigation__item">work</a>
-					<a href="#" class="header-navigation__item">blog</a>
-					<a href="#" class="header-navigation__item">contact</a>
-					<a href="#" class="header-navigation__item">icon</a>
-					<a href="#" class="header-navigation__item">icon</a>
+					<a href="#about" class="header-navigation__item">about</a>
+					<a href="#services" class="header-navigation__item">service</a>
+					<a href="#design" class="header-navigation__item">work</a>
+					<a href="#blog" class="header-navigation__item">blog</a>
+					<a href="#map" class="header-navigation__item">contact</a>
+					<a href="#" class="header-navigation__item"><img src="img/SHOPPING_CART.png" alt="SHOPPING_CART" class="navigation__item-img"></a>
+					<a href="#" class="header-navigation__item"><img src="img/MAGNIFYING_GLASS.png" alt="MAGNIFYING_GLASS" class="navigation__item-img"></a>
 				</nav>
 			</div>
 		</div>
 	</header>
 
-	<div class="intro">
+	<div id="intro" class="intro">
 		<div class="intro-container container">
 			<div class="intro__inner">
 				<h2 class="intro__suptitle">Creative Template</h2>
 				<h1 class="intro__title">Welcome to MoGo</h1>
 				<div class="after-title-line"></div>
-				<a href="#" class="intro__button">Learn more</a>
+				<a href="#about__container" class="intro__button">Learn more</a>
 			</div>
 			<div class="intro-slider">
 				<div class="intro-slider__item intro-slider__item-active">
@@ -61,9 +61,9 @@
 			</div>
 		
 		</div>
-	</div>
+	</div >
 
-	<div class="about container">
+	<div id="about" class="about container">
 		<div class="about__title-section title-section">
 			<div class="about__sup-title sup-title">what we do</div>
 			<div class="about__title title">story about us</div>
@@ -82,7 +82,7 @@
 		
 	</div>
 
-	<div class="achievement-counter">
+	<div  id="achievement-counter" class="achievement-counter">
 		<div class="achievment__container container">
 				
 			<div class="achievment-item">
@@ -109,7 +109,7 @@
 		</div>
 	</div>
 
-	<div class="services container">
+	<div  id="services" class="services container">
 		<div class="services__title-section title-section">
 			<div class="services__sup-title sup-title">We work with</div>
 			<div class="services__title title">Amazing Services</div>
@@ -162,7 +162,7 @@
 		
 	</div>
 
-	<div class="design">
+	<div  id="design" class="design">
 		<div class="container">
 
 			<div class="design__title-section title-section">
@@ -178,7 +178,7 @@
 		</div>
 	</div>
 
-	<div class="whatWeDo"> 
+	<div  id="whatWeDo" class="whatWeDo"> 
 		<div class="whatWeDo__container container">
 
 			<div class="whatWeDo__title-section title-section">
@@ -243,7 +243,7 @@
 		</div>
 	</div> <!--whatWeDO (end) -->
 
-	<div class="quote"> <!-- Блок НЕ уникальный, и на странице будет использоваться ещё раз-->
+	<div id="qoute" class="quote"> <!-- Блок НЕ уникальный, и на странице будет использоваться ещё раз-->
 		<div class="quote__container container">
 			<img src="img/quote-icon.png" alt="quote-icon" class="quote__icon">
 			<div class="quote__text">
@@ -252,9 +252,9 @@
 			</div>
 		</div>
 		
-	</div><!--quote (end) -->
+	</div id="about"><!--quote (end) -->
 
-	<div class="team">
+	<div id="team" class="team">
 		<div class="team__container container">
 
 			<div class="team__title-section title-section">
@@ -287,12 +287,12 @@
 			</div>
 			
 		</div>
-	</div>
+	</div id="about">
 
 	<!-- Нужно было ещё больше независимости для блоков, но при этом максимально полно заполнить однотипные контейнеры.
 	В моём случае, каждый раз размечая область для контента я применяю блок container (что верно), и каждый раз я его дополняю чем-то (flex-directions: column/row) и практически каждый раз я добавляю одни и те же значения в миксе. Но в место этого, я мог бы в самом начале внести их в оригинальный контейнер.-->
 
-	<div class="work-samples"> <!-- Блок НЕ уникальный, и на странице будет использоваться ещё раз-->
+	<div id="work-samples" class="work-samples"> <!-- Блок НЕ уникальный, и на странице будет использоваться ещё раз-->
 		<div class="work-samples__container container"> <!--макет не идеален, по этому пришлось вырезать иконки самому-->
 			
 			<img src="img/work-sample-item_1.png" alt="quote-icon" class="work-samples__item">
@@ -307,7 +307,7 @@
 		
 	</div><!--work-samples (end) -->
 
-	<div class="some-work">
+	<div id="some-work" class="some-work">
 		<div class="some-work__container container">
 
 			<div class="some-work-section title-section">
@@ -335,7 +335,7 @@
 		</div>
 	</div><!--some-work (end) -->
 
-	<div class="whatPeopleSay">
+	<div  id="whatPeopleSay" class="whatPeopleSay">
 		<div class="whatPeopleSay__container container">
 
 			<div class="whatPeopleSay-section title-section">
@@ -391,7 +391,7 @@
 
 	</div> <!--whatPeopleSay (end) -->
 
-	<div class="blog">
+	<div id="blog" class="blog">
 		<div class="blog__container container">
 
 			<div class="blog-section title-section">
@@ -456,11 +456,11 @@
 			
 		</div>
 	</div> <!--Blog (end) -->
-	<div class="map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d255812.16134336565!2d29.80983421788602!3d59.93989912237907!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696378cc74a65ed%3A0x6dc7673fab848eff!2z0KHQsNC90LrRgi3Qn9C10YLQtdGA0LHRg9GA0LM!5e0!3m2!1sru!2sru!4v1577643303651!5m2!1sru!2sru" width=100% height="250" frameborder="0" style="border:0;" allowfullscreen=""></iframe></div>
+	<div id="map" class="map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d255812.16134336565!2d29.80983421788602!3d59.93989912237907!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696378cc74a65ed%3A0x6dc7673fab848eff!2z0KHQsNC90LrRgi3Qn9C10YLQtdGA0LHRg9GA0LM!5e0!3m2!1sru!2sru!4v1577643303651!5m2!1sru!2sru" width=100% height="250" frameborder="0" style="border:0;" allowfullscreen=""></iframe></div>
 	
 	
 
-	<footer class="footer">
+	<footer id="footer" class="footer">
 		<div class="footer__container container">
 
 			<div class="footer__row-content">
