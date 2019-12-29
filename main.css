@@ -180,6 +180,14 @@ body{
 	min-height: 100vh;
 	justify-content: space-between;
 }
+@media  (max-height: 525px) {
+	.intro-container{
+		display: flex;
+		flex-direction: column;
+		min-height: 525px;
+		justify-content: space-between;
+	}
+} 
 /*внутренний контейнер для того, что бы обозначить зону заголовка*/
 .intro__inner{ 
 	display: flex;
@@ -385,7 +393,7 @@ body{
 		@media (max-width: 860px) {
 			.about_photo {
 				margin: 10px 10px;
-				
+				width: 95%;
 				
 			}
 			.about_photo:last-child{
