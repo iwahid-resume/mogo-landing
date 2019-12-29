@@ -55,7 +55,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;} /*Всё заголовк
 :root{
 --screen-sm: 576px;
 --screen-md: 768px;
---screen-lg: 992px;
+--screen-lg: 660px;
 --screen-xl: 1200px;
 }
 
@@ -805,6 +805,17 @@ body{
 		margin: 100px 0 130px 0;
 	}
 
+		@media (max-width: 860px) {
+			.some-work__quote-container{
+				display: flex;
+				flex-direction: row;
+				align-items: flex-start;
+				margin: 100px 0 130px 0;
+			}
+		}
+			
+			
+
 /* What-people-say */
 /*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 
@@ -822,11 +833,19 @@ body{
 		.quote-container-item{
 			display: flex;
 			flex-direction: row;
-			max-width: 48%;
-			min-width: 550px; /*подкорректировать под размеры мобилок*/
+			max-width: 47%;
 			margin-bottom: 80px;
 			align-items: center;
+			margin: 10px;
+			align-items: flex-start;
 		}
+
+			@media (max-width: 860px) {
+				.quote-container-item{
+				
+					max-width: 95%;
+				}
+			}
 			.whatPeopleSay__text{
 				margin-left: 15px;
 				position: relative;
@@ -859,7 +878,7 @@ body{
 					content: "";
 					width: 60px;
 					height: 3px;
-					background-color: #f38181;
+					background-color: #ff0000;
 					position: absolute;
 					top: 70px;
 				}
@@ -886,6 +905,10 @@ body{
 			margin: 0 15px 115px 15px;
 			position: relative;
 		}
+		
+	
+	
+		
 			.post__img{
 				width: 100%;
 			}
@@ -906,7 +929,9 @@ body{
 				font-weight: 400;
 				line-height: 24px;
 				text-align: left;
+				margin: 0px;
 				margin-bottom: 40px;
+
 			}
 			.post__line{
 				width: 100%;
@@ -926,6 +951,11 @@ body{
 				text-align: center;
 				padding-top: 15px;
 
+			}
+			@media (max-width: 768px) {
+				.post__date-frame{
+					top:100px;
+				}
 			}
 				.frame__number{
 
@@ -963,6 +993,28 @@ body{
 					background-size: auto;
 				}
 
+				@media (max-width: 1200px) {
+					.blog-row__post{
+						max-width: 45%;
+						margin: 0 15px 115px 15px;
+						position: relative;
+					}
+				}
+				@media (max-width: 768px) {
+					.post__date-frame{
+						top:100px;
+					}
+				}
+				@media (max-width: 600px) {
+					
+					.blog-row__post{
+						max-width: 95%;	
+					}
+					.post__date-frame{
+						top:250px;
+					}
+				}
+
 /* Footer */
 /*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 
@@ -979,10 +1031,26 @@ body{
 	.footer__row-content{
 		display: flex;
 		flex-direction: row;
+		flex-wrap: wrap;
 	}
 
 	.item-of-footer{
-		margin: 15px 20px;
+		margin: 20px 5px;
+	}
+	@media (max-width: 1100px) {
+		.item-of-footer{
+			min-width: 45%;
+			
+		}
+		.footer__row-content{
+			justify-content: center;
+		}
+	}
+	@media (max-width: 600px) {
+		.item-of-footer{
+			min-width: 95%;
+			
+		}
 	}
 	/* Footer-resume */
 	/*/////////////////////////////////////////////////*/
@@ -991,7 +1059,7 @@ body{
 		 /* в виду частой необходимости однотипного указания разметки, думаю в следующем проекте применить принцип как в бутстрапе: стилизовать блок набором готовых классов: "f-d--column; a-i--f-s"*/
 		 flex-direction: column;
 		 align-items: flex-start;
-		 width: 44%;
+		 max-width: 40%;
 	}
 	
 		.footer__logo{
@@ -1121,6 +1189,13 @@ body{
 			.footer-instagram__photo-item{
 				margin: 3px;
 				
+			}
+
+			@media (max-width: 1100px) {
+				.footer-instagram{
+					width: 100%;
+					align-items: center;
+				}
 			}
 
 .after__row-content_line{
