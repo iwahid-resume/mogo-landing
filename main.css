@@ -131,6 +131,12 @@ body{
 				padding:15px 15px;
 				position: relative; /*ради того, что бы от него отсчитывать координаты полоски подчёркивания*/
 			}
+			.header-navigation__item_active{
+				color: black;
+				font-size: 20px;
+				font-weight: 900;
+				border: #fce38a 1px solid;
+			}
 
 			@media (max-width: 768px) {
 				.header-navigation__item{
@@ -184,10 +190,10 @@ body{
 		min-height: 100vh;
 		justify-content: space-between;
 	}
-	@media  (max-height: 525px) {
+	@media  (max-height: 525px) {/*при открытии на смартфонах в landscape режиме слишком маленькая высота экрана, и тогда из-за этого фон inner-a неотрисовывается под всеми элементами на этой странице*/
 		.intro-container{
 			display: flex;
-			flex-direction: column;
+			flex-direction: column; 
 			min-height: 525px;
 			justify-content: space-between;
 		}
@@ -336,11 +342,7 @@ body{
 
 /* === About === */
 /*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
-.about {
-}
-    .about__title-section {
-        
-    }
+
     .title-section {
 		display: flex;
 		flex-direction: column;
@@ -498,9 +500,7 @@ body{
         .collection-item__icon {
             margin-right: 30px;
         }
-        .collection-item__text {
-            
-        }
+        
             .collection-item__title {
 				color: #333333;
 				font-family: Montserrat;
@@ -895,12 +895,8 @@ body{
 	flex-direction: column;
 	align-items: center;
 }
-	.temporary-block{
-		width: 100px;
-		height: 350px;
-		background-color: grey;
+	
 
-	}
 	.some-work__quote-container{
 		display: flex;
 		flex-direction: row;
