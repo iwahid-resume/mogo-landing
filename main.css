@@ -190,11 +190,11 @@ body{
 		min-height: 100vh;
 		justify-content: space-between;
 	}
-	@media  (max-height: 525px) {/*при открытии на смартфонах в landscape режиме слишком маленькая высота экрана, и тогда из-за этого фон inner-a неотрисовывается под всеми элементами на этой странице*/
-		.intro-container{
+	@media  (max-height: 600px) {/*при открытии на смартфонах в landscape режиме слишком маленькая высота экрана, и тогда из-за этого фон inner-a неотрисовывается под всеми элементами на этой странице*/
+		.intro{
 			display: flex;
 			flex-direction: column; 
-			min-height: 525px;
+			min-height: 580px;
 			justify-content: space-between;
 		}
 	} 
